@@ -9,7 +9,7 @@ This React + TypeScript project implements a Task Management application demonst
 - Type safety with TypeScript interfaces
 
 ## Components
-- TaskItem
+#TaskItem
 - Displays an individual task.
 - Allows changing the status via a dropdown.
 - Allows deleting a task with a button.
