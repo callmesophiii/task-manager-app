@@ -8,6 +8,7 @@ This React + TypeScript project implements a Task Management application demonst
 - Component composition and prop handling
 - Type safety with TypeScript interfaces
 
+
 ## Components
 ### TaskItem
 - Displays an individual task.
@@ -32,6 +33,8 @@ This React + TypeScript project implements a Task Management application demonst
 - Maintains the full list of tasks in state.
 - Implements handlers to update task status and delete tasks.
 - Passes tasks and handlers down to TaskList.
+
+
 
 ## How to Use
 - Filter tasks using dropdowns for status and priority.
