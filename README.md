@@ -48,7 +48,7 @@ This React + TypeScript project implements a Task Management application demonst
 ## Project Setup
 
 1. Clone the repository:
-- git clone https://github.com/yourusername/task-manager.git
+- git clone https://github.com/callmesophiii/task-manager-app.git
 - cd task-manager
 
 2. Install dependencies:
