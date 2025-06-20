@@ -9,44 +9,35 @@ This React + TypeScript project implements a Task Management application demonst
 - Type safety with TypeScript interfaces
 
 ## Components
-# TaskItem
+### TaskItem
 - Displays an individual task.
 - Allows changing the status via a dropdown.
 - Allows deleting a task with a button.
-Shows different styles based on task priority and completion status.
+- Shows different styles based on task priority and completion status.
 
-TaskFilter
-Provides UI controls (dropdowns) to filter tasks by:
+### TaskFilter
+- Provides UI controls (dropdowns) to filter tasks by:
+- Status: pending, in-progress, completed
+- Priority: low, medium, high
+- Calls a callback prop when filters change.
 
-Status: pending, in-progress, completed
+### TaskList
+- Manages the filtered list of tasks.
+- Uses TaskFilter to get current filter selections.
+- Renders a list of TaskItem components matching the filters.
+- Shows a message if no tasks match filters.
 
-Priority: low, medium, high
+### App
+- Root component.
+- Maintains the full list of tasks in state.
+- Implements handlers to update task status and delete tasks.
+- Passes tasks and handlers down to TaskList.
 
-Calls a callback prop when filters change.
+## How to Use
+- Filter tasks using dropdowns for status and priority.
 
-TaskList
-Manages the filtered list of tasks.
+- Change a task's status directly from the task item.
 
-Uses TaskFilter to get current filter selections.
+- Delete tasks using the red "Delete" button.
 
-Renders a list of TaskItem components matching the filters.
-
-Shows a message if no tasks match filters.
-
-App
-Root component.
-
-Maintains the full list of tasks in state.
-
-Implements handlers to update task status and delete tasks.
-
-Passes tasks and handlers down to TaskList.
-
-How to Use
-Filter tasks using dropdowns for status and priority.
-
-Change a task's status directly from the task item.
-
-Delete tasks using the red "Delete" button.
-
-The list updates dynamically based on your changes and filters.
+- The list updates dynamically based on your changes and filters.
